@@ -33,6 +33,8 @@ app.get('/api/datos', (req, res) => {
             res.status(500).send(err);
         } else {
             res.json(results);
+            console.log(results);
+            
         }
     });
 });
